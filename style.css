@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@200;400;700&family=Fira+Sans&family=Montserrat&family=Roboto+Mono:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+}
+
+:root{
+    --primary:#777;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    /* color: black; */
+    color: var(--primary);
+}
+
+/* //////Normal Mode////// */
+.container {
+    width: 100%;
+    background-color: whitesmoke;
+    height: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+}
+
+.navList {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+
+.btn {
+    background-color: black;
+    height: 2rem;
+    width: 3.5rem;
+    border-radius: 10rem;
+}
+
+
+
+#checkbox {
+    visibility: hidden;
+}
+
+.btn-label {
+    position: relative;
+    border-radius: 50%;
+    height: 1.2rem;
+    width: 1.2rem;
+    display: inline-block;
+    right: 20px;
+}
+
+.btn-ball {
+    position: absolute;
+    top: 0.5rem;
+    left: 0rem;
+    border-radius: 50%;
+    height: 1.2rem;
+    width: 1.2rem;
+    display: inline-block;
+    background-color: white;
+    cursor: pointer;
+    transition: all .5s linear;
+}
+
+#checkbox:checked+.btn-label .btn-ball {
+    transform: translateX(2rem);
+}
+
+/* ////Dark Mode//// */
+
+.testing .container {
+    width: 100%;
+    background-color: black;
+    height: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+}
+
+.testing a {
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+}
+
+.testing .btn {
+    background-color: white;
+    height: 2rem;
+    width: 3.5rem;
+    border-radius: 10rem;
+}
+
+
+.testing .btn-ball {
+    position: absolute;
+    top: 0.5rem;
+    left: 0rem;
+    border-radius: 50%;
+    height: 1.2rem;
+    width: 1.2rem;
+    display: inline-block;
+    background-color: black;
+    cursor: pointer;
+    transition: all .5s linear;
+}
+
+.testing .container h1 {
+    color: white;
+}
